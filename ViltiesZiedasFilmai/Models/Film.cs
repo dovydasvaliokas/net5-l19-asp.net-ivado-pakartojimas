@@ -16,17 +16,6 @@
 
         public string Rating { get; set; }
 
-        public Film(FilmContext context, int filmId, string title, string description, int releaseYear, int length, string rating)
-        {
-            this.context = context;
-            FilmId = filmId;
-            Title = title;
-            Description = description;
-            ReleaseYear = releaseYear;
-            Length = length;
-            Rating = rating;
-        }
-
         public Film(int filmId, string title, string description, int releaseYear, int length, string rating)
         {
             FilmId = filmId;

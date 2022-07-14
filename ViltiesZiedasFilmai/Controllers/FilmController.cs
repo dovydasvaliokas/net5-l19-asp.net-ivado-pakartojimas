@@ -10,7 +10,7 @@ namespace ViltiesZiedasFilmai.Controllers
         public IActionResult Index()
         {
          //   FilmContext context = HttpContext.RequestServices.GetService(typeof(ViltiesZiedasFilmai.Models.FilmContext)) as FilmContext;
-            return View(_filmContext.GautiVisusFilmus());
+            return View(_filmContext.GautiVisusFilmus()[0]);
         }
     }
 }
